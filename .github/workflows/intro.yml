@@ -1,0 +1,11 @@
+name: Salut mes squeezos
+
+on:
+    push:
+
+jobs:
+    hello-world:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - run: Yop tout le monde c'est squeezie
