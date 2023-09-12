@@ -91,4 +91,4 @@ jobs:
                 NETLIFY_DEPLOY_TO_PROD: true
                 build_directory: dist
                 build_command: pnpm run build
-                install_command: pnpm
+                install_command: pnpm install
