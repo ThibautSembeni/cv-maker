@@ -8,4 +8,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - run: Yop tout le monde c'est squeezie
+            - run: echo "Yop tout le monde c'est squeezie"
