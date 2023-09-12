@@ -1,11 +1,17 @@
-name: Salut mes squeezos
+name: Intro to CI
 
 on:
     push:
 
 jobs:
-    hello-world:
+    build:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
-            - run: echo "Yop tout le monde c'est squeezie"
+            - name: Checkout
+              uses: actions/checkout@v4
+            
+            - name: Install dependencies
+              run: npm install
+            
+            - name: Build
+              run: npm run build
